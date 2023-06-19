@@ -57,3 +57,106 @@
     width: 68px;
     height: 65px;
 }
+
+@media screen and (max-width: 400px) {
+    .main-youtube iframe {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .main-youtube iframe {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .main-home li {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .main-youtube iframe {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .main-home li {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main-youtube iframe {
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .main-home li {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .main-youtube iframe {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    .main-home li {
+        width: 120px;
+        height: 120px;
+    }
+
+    .main-home svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .main-youtube iframe {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .header-modal {
+        width: 220px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #161624;
+        z-index: 1000;
+    }
+    
+    .header_item {
+        width: 220px;
+        height: 50px;
+        margin-left: -32px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .main-youtube iframe {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .main-home li {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-home svg {
+        width: 40px;
+        height: 40px;
+    }
+}

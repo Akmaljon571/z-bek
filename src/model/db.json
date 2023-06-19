@@ -1,102 +1,337 @@
 [
     {
-        "id": 1,
-        "en": "Middle",
-        "uz": "O'rta"
-    },
-    {
-        "id": 2,
-        "en": "Laptop",
-        "uz": "Kampyuter"
-    },
-    {
-        "id": 3,
-        "en": "Language",
-        "uz": "Til"
-    },
-    {
         "id": 4,
         "en": "Middle",
         "uz": "O'rta"
     },
     {
-        "id": 5,
-        "en": "Laptop",
-        "uz": "Kampyuter"
+        "id": "5",
+        "en": "Afraid",
+        "uz": "Qo'rqan cho'chigan"
     },
     {
         "id": 6,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Agree",
+        "uz": "Fikriga qo'shilmoq"
     },
     {
         "id": 7,
-        "en": "Middle",
-        "uz": "O'rta"
+        "en": "Angry",
+        "uz": "Jaxli Chiqan"
     },
     {
         "id": 8,
-        "en": "Laptop",
-        "uz": "Kampyuter"
-    },
-    {
-        "id": 9,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Arrive",
+        "uz": "Yetib Kelmoq"
     },
     {
         "id": 10,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Attack",
+        "uz": "Hujum qilmoq"
     },
     {
         "id": 11,
-        "en": "Middle",
-        "uz": "O'rta"
+        "en": "Bottom",
+        "uz": "ostgi pastgi"
     },
     {
         "id": 12,
-        "en": "Laptop",
-        "uz": "Kampyuter"
+        "en": "Clever",
+        "uz": "Aqilli"
     },
     {
         "id": 13,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Cruel",
+        "uz": "Shafqatsiz"
     },
     {
         "id": 14,
-        "en": "Middle",
-        "uz": "O'rta"
+        "en": "Finally",
+        "uz": "VaNihoyat"
     },
     {
         "id": 15,
-        "en": "Laptop",
-        "uz": "Kampyuter"
+        "en": "Hide",
+        "uz": "Yashirinmoq"
     },
     {
         "id": 16,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Hunt ",
+        "uz": "Ov Qilmoq"
     },
     {
         "id": 17,
-        "en": "Middle",
-        "uz": "O'rta"
+        "en": "Lot",
+        "uz": "juda Ko'p"
     },
     {
         "id": 18,
-        "en": "Laptop",
-        "uz": "Kampyuter"
+        "en": "Moment",
+        "uz": "Daqiqa; zum"
     },
     {
         "id": 19,
-        "en": "Language",
-        "uz": "Til"
+        "en": "pleased",
+        "uz": "Hursand"
     },
     {
         "id": 20,
-        "en": "Language",
-        "uz": "Til"
+        "en": "Promise",
+        "uz": "Va'da"
+    },
+    {
+        "id": 21,
+        "en": "reply",
+        "uz": "javob bermoq"
+    },
+    {
+        "id": 22,
+        "en": "safe",
+        "uz": "xavfsiz"
+    },
+    {
+        "id": 23,
+        "en": "trick",
+        "uz": "hiyla"
+    },
+    {
+        "id": 24,
+        "en": "well",
+        "uz": "yaxshi"
+    },
+    {
+        "id": 25,
+        "en": "Advanture",
+        "uz": "Sarguzasht"
+    },
+    {
+        "id": 26,
+        "en": "approach",
+        "uz": "yaqinlashmoq"
+    },
+    {
+        "id": 27,
+        "en": "Curefully",
+        "uz": "Extiyodkorlik blan"
+    },
+    {
+        "id": 28,
+        "en": "Chemical",
+        "uz": "Kimyoviy modda"
+    },
+    {
+        "id": 29,
+        "en": "create",
+        "uz": "yaratmoq"
+    },
+    {
+        "id": 30,
+        "en": "evil",
+        "uz": "Yovuz"
+    },
+    {
+        "id": 31,
+        "en": "experiment",
+        "uz": "Tajriba, Sinov"
+    },
+    {
+        "id": 32,
+        "en": "Kill",
+        "uz": "O'ldirmoq"
+    },
+    {
+        "id": 33,
+        "en": "Laboratory",
+        "uz": "Labaratoriya"
+    },
+    {
+        "id": 34,
+        "en": "laugh",
+        "uz": "kulgi"
+    },
+    {
+        "id": "35",
+        "en": "loud",
+        "uz": "Baland, Shovqin"
+    },
+    {
+        "id": 36,
+        "en": "nervous",
+        "uz": "xavotirlanmoq"
+    },
+    {
+        "id": 37,
+        "en": "noise",
+        "uz": "shovqin, yoqimsiz ovoz"
+    },
+    {
+        "id": 38,
+        "en": "project",
+        "uz": "maxsus topshiriq"
+    },
+    {
+        "id": 39,
+        "en": "scare",
+        "uz": "qo'rqitmoq"
+    },
+    {
+        "id": 40,
+        "en": "secret",
+        "uz": "sir"
+    },
+    {
+        "id": 41,
+        "en": "shout",
+        "uz": "baqirmoq"
+    },
+    {
+        "id": 42,
+        "en": "smell",
+        "uz": "hidlamoq"
+    },
+    {
+        "id": 43,
+        "en": "terrible",
+        "uz": "juda yomon"
+    },
+    {
+        "id": 44,
+        "en": "worse",
+        "uz": "yomonroq"
+    },
+    {
+        "id": 45,
+        "en": "dede",
+        "uz": "deded"
+    },
+    {
+        "id": 46,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 47,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 48,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 49,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 50,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 51,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 52,
+        "en": "dede",
+        "uz": "deded"
+    },
+    {
+        "id": 53,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 54,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 55,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 56,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 57,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": 58,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 59,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 60,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 61,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 62,
+        "en": "r",
+        "uz": "frf"
+    },
+    {
+        "id": 63,
+        "en": "fr",
+        "uz": "f"
+    },
+    {
+        "id": 64,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 65,
+        "en": "ded",
+        "uz": "e"
+    },
+    {
+        "id": "66",
+        "en": "ddd",
+        "uz": "d"
+    },
+    {
+        "id": 67,
+        "en": "de",
+        "uz": "d"
+    },
+    {
+        "id": 68,
+        "en": "de",
+        "uz": "d"
+    },
+    {
+        "id": 69,
+        "en": "d",
+        "uz": "d"
+    },
+    {
+        "id": 70,
+        "en": "de",
+        "uz": "de"
+    },
+    {
+        "id": 71,
+        "en": "d",
+        "uz": "d"
     }
 ]

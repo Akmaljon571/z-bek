@@ -59,26 +59,28 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    gap: 20px;
     padding-top: 30px;
+    gap: 5px;
 }
 
 .header_item {
     width: 270px;
+    height: 50px;
     margin-left: -32px;
-    padding: 10px;
     display: flex;
     align-items: center;
-    gap: 12px;
     text-decoration: none;
 }
 
 .header_item a {
+    padding: 10px;
     padding-left: 22px;
     display: flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .header_item span {

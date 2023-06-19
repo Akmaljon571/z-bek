@@ -33,7 +33,8 @@ export const game = async (req, res) => {
 }
 
 export const gamex10 = async (req, res) => {
-    const all = read('db.json').sort((a, b) => a.id - b.id).slice(0, 10)
+    const allWord = read('db.json').sort((a, b) => a.id - b.id)
+    const all = allWord.slice(allWord.length - 11, -1)
     const lang = req.query?.lang || 'en'
 
     const find = all[Math.floor(Math.random() * all.length)]
