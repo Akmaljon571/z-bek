@@ -51,7 +51,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="header_item header_active">
+                <li class="header_item">
                     <a href="all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-bricks"
                             viewBox="0 0 16 16">
@@ -63,7 +63,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="header_item">
+                <li class="header_item header_active">
                     <a href="game">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-controller" viewBox="0 0 16 16">
@@ -136,32 +136,45 @@
     </header>
     <!-- End Header -->
     <!-- Start Table -->
-        <h1 class="all_h1">All Words</h1>
-        <table class="table">
-            <tr class="tr">
-              <th>N</th>
-              <th>English</th>
-              <th>Uzbek</th>
-            </tr>
-            <% if (all?.length) { %>
-                <% for( let i = 0; i < all.length; i++ ) { %>
-                    <% if (i % 2 == 0) { %>
-                        <tr>
-                            <td class="tdN"><%= 1 + i %></td>
-                            <td><%= all[i]?.en %></td>
-                            <td><%= all[i]?.uz %></td>
-                        </tr>
+    <h1 class="all_h1">All Words</h1>
+    <table class="table">
+        <tr class="tr">
+            <th>N</th>
+            <th>English</th>
+            <th>Uzbek</th>
+        </tr>
+        <% if (all?.length) { %>
+            <% for( let i=0; i < all.length; i++ ) { %>
+                <% if (i % 2==0) { %>
+                    <tr>
+                        <td class="tdN">
+                            <%= 1 + i %>
+                        </td>
+                        <td>
+                            <%= all[i]?.en %>
+                        </td>
+                        <td>
+                            <%= all[i]?.uz %>
+                        </td>
+                    </tr>
                     <% } else { %>
                         <tr class="tr_active">
-                            <td class="tdN"><%= 1 + i %></td>
-                            <td><%= all[i]?.en %></td>
-                            <td><%= all[i]?.uz %></td>
+                            <td class="tdN">
+                                <%= 1 + i %>
+                            </td>
+                            <td>
+                                <%= all[i]?.en %>
+                            </td>
+                            <td>
+                                <%= all[i]?.uz %>
+                            </td>
                         </tr>
-                    <% } %>
-                <% } %>
-            <% } %>
-        </table>
+                        <% } %>
+                            <% } %>
+                                <% } %>
+    </table>
     <!-- End Table -->
     <script src="/js/script.js"></script>
 </body>
+
 </html>

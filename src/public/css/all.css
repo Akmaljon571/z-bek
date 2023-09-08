@@ -1,9 +1,12 @@
 .table {
     border: none;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .table tr {
     border: none;
+    padding: 15px;
 }
 
 .tr {
@@ -19,6 +22,7 @@
 .table td {
     background-color: #001CAF1A;
     max-width: 200px;
+    padding: 5px;
     border: none;
     overflow: auto;
     text-align: center;
