@@ -39,7 +39,6 @@ export const game = async (req, res) => {
 export const gamex10 = async (req, res) => {
     const findDb = await db.find()
     const allWord = findDb.sort((a, b) => a.id - b.id)
-    console.log(allWord)
     const all = allWord.slice(allWord.length - 11, -1)
     const lang = req.query?.lang || 'en'
 
