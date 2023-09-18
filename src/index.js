@@ -33,7 +33,6 @@ const main = async () => {
         })
         .then(() => console.log('Mongoose Run'))
         .catch((error) => console.log(error))
-        app.get('/', (_, res) => res.json('Aka Ishlab turibman😇'))
         app.listen(PORT, console.log('Server RUN'))
     } catch (error) {
         console.log(error)
