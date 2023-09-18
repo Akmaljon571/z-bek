@@ -1,34 +1,31 @@
-import { read, write } from "../utils/FS.js";
+import db from "../model/db.js"
 
-export const createWord = (req, res) => {
-    const alldata = read('db.json')
-    const newObj = {
+export const createWord = async (req, res) => {
+    const alldata = await db.find()
+    const newObj = new db({
         id: Number(alldata?.at(-1)?.id) + 1 || 1,
-        en: req.body?.en,
+        ru: req.body?.en,
         uz: req.body?.uz
-    }
-    alldata.push(newObj)
-    write('db.json', alldata)
+    })
+    await newObj.save()
+
     res.render("create.ejs")
 }
 
-export const updateWord = (req, res) => {
+export const updateWord = async (req, res) => {
     const { id } = req.params
-    const alldata = read('db.json')
-    const find = alldata.find(e => e.id == id)
-    const newObj = {
-        id: id,
-        en: req.body?.en || find.en,
-        uz: req.body?.uz || find.uz
-    }
-    write('db.json', alldata.map(e => e.id == id ? newObj : e))
+    const findData = await db.findOne({ id })
+    findData.ru = req.body?.en || find.ru
+    findData.uz = req.body?.uz || find.uz
+    await db.findOneAndUpdate(findData._id, findData)
+    
     res.render("create.ejs")
 }
 
-export const removeWord = (req, res) => {
+export const removeWord = async (req, res) => {
     const { id } = req.params
-    const newDb = read("db.json").filter(e => e?.id != id)
-    write("db.json", newDb)
-    const all = read('db.json').sort((a, b) => a.id - b.id)
+    const delDb = await db.findOne({ id })
+    await db.findByIdAndDelete(delDb._id)
+    const all = await db.find()
     res.render('delete.ejs', { all })
 }

@@ -3,6 +3,7 @@ import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
 import ejs from "ejs"
+import mongoose from "mongoose"
 import path from "path"
 import routes from "./routes/routes.js"
 import { ErrorHandle } from "./Error/error.middleWare.js"
@@ -25,5 +26,18 @@ app.use(routes)
 app.use(ErrorHandle)
 app.all("/*", (_, res) => res.sendStatus(404))
 
-// Liston
-app.listen(PORT, console.log(PORT))
+const main = async () => {
+    try {
+        await mongoose.connect(process.env.DB, {
+            useNewUrlParser: true
+        })
+        .then(() => console.log('Mongoose Run'))
+        .catch((error) => console.log(error))
+        app.get('/', (_, res) => res.json('Aka Ishlab turibman😇'))
+        app.listen(PORT, console.log('Server RUN'))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+main()
